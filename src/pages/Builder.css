@@ -1,0 +1,1141 @@
+
+/* =========================
+   BUILDER PAGE
+========================= */
+
+.builder-page {
+  min-height: 100vh;
+  background: #f3f6fb;
+  color: #172033;
+  font-family: Arial, sans-serif;
+}
+
+/* =========================
+   TOP BAR
+========================= */
+
+.builder-topbar {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  min-height: 72px;
+  padding: 12px 24px;
+  background: #ffffff;
+  border-bottom: 1px solid #e3e7ef;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.builder-brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.builder-brand h1 {
+  margin: 0 0 0 8px;
+  font-size: 25px;
+  color: #172033;
+}
+
+/* =========================
+   BUTTONS
+========================= */
+
+.icon-btn {
+  width: 40px;
+  height: 40px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid #d8deea;
+  border-radius: 9px;
+  background: #ffffff;
+  color: #172033;
+
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.icon-btn:hover {
+  background: #f1f4f9;
+}
+
+.builder-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.primary-btn,
+.secondary-btn,
+.danger-btn,
+.add-btn,
+.upload-btn,
+.small-danger,
+.visibility-btn {
+  border: none;
+  border-radius: 9px;
+  padding: 10px 15px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.primary-btn {
+  background: #6d28d9;
+  color: white;
+}
+
+.primary-btn:hover {
+  background: #5b21b6;
+}
+
+.secondary-btn {
+  background: white;
+  color: #253047;
+  border: 1px solid #d7ddea;
+}
+
+.secondary-btn:hover {
+  background: #f5f7fb;
+}
+
+.danger-btn {
+  background: #fff1f2;
+  color: #be123c;
+  border: 1px solid #fecdd3;
+}
+
+.danger-btn:hover {
+  background: #ffe4e6;
+}
+
+.add-btn {
+  background: #eef2ff;
+  color: #4f46e5;
+  border: 1px solid #c7d2fe;
+  margin-top: 12px;
+}
+
+.add-btn:hover {
+  background: #e0e7ff;
+}
+
+.upload-btn {
+  background: #6d28d9;
+  color: white;
+}
+
+.upload-btn:hover {
+  background: #5b21b6;
+}
+
+.small-danger {
+  background: #fff1f2;
+  color: #be123c;
+  border: 1px solid #fecdd3;
+  padding: 7px 10px;
+}
+
+.visibility-btn {
+  background: #f3f4f6;
+  color: #374151;
+  border: 1px solid #d1d5db;
+  padding: 7px 12px;
+}
+
+/* =========================
+   MAIN LAYOUT
+========================= */
+
+.builder-layout {
+  width: 100%;
+  max-width: 1600px;
+  margin: 0 auto;
+
+  padding: 24px;
+
+  display: grid;
+  grid-template-columns: minmax(480px, 1fr) minmax(500px, 0.9fr);
+  gap: 28px;
+
+  align-items: start;
+}
+
+/* =========================
+   EDITOR
+========================= */
+
+.builder-editor {
+  min-width: 0;
+}
+
+.builder-heading {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 20px;
+
+  margin-bottom: 20px;
+}
+
+.builder-heading h2 {
+  margin: 0 0 7px;
+  font-size: 28px;
+}
+
+.builder-heading p {
+  margin: 0;
+  color: #667085;
+  font-size: 14px;
+}
+
+/* =========================
+   TABS
+========================= */
+
+.builder-tabs {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+
+  margin-bottom: 16px;
+  padding: 6px;
+
+  background: white;
+  border: 1px solid #e1e6ef;
+  border-radius: 12px;
+}
+
+.builder-tabs button {
+  border: none;
+  background: transparent;
+
+  color: #475467;
+
+  padding: 9px 13px;
+  border-radius: 8px;
+
+  font-size: 13px;
+  font-weight: 600;
+
+  cursor: pointer;
+}
+
+.builder-tabs button:hover {
+  background: #f2f4f7;
+}
+
+.builder-tabs button.active {
+  background: #6d28d9;
+  color: white;
+}
+
+/* =========================
+   EDITOR CARD
+========================= */
+
+.editor-card {
+  background: white;
+
+  border: 1px solid #e1e6ef;
+  border-radius: 16px;
+
+  padding: 22px;
+
+  box-shadow: 0 4px 18px rgba(16, 24, 40, 0.05);
+}
+
+.card-title {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 15px;
+
+  margin-bottom: 22px;
+}
+
+.card-title h3 {
+  margin: 0 0 5px;
+  font-size: 20px;
+}
+
+.card-title p {
+  margin: 0;
+  color: #667085;
+  font-size: 13px;
+}
+
+/* =========================
+   PHOTO
+========================= */
+
+.photo-upload {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+
+  margin-bottom: 22px;
+  padding: 14px;
+
+  background: #f8fafc;
+  border: 1px dashed #cbd5e1;
+  border-radius: 12px;
+}
+
+.photo-placeholder,
+.profile-upload-preview {
+  width: 78px;
+  height: 78px;
+
+  border-radius: 12px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.photo-placeholder {
+  background: #e9d5ff;
+  color: #6d28d9;
+}
+
+.profile-upload-preview {
+  object-fit: cover;
+  border: 1px solid #d8dee9;
+}
+
+/* =========================
+   FORM
+========================= */
+
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 17px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+
+  margin-bottom: 17px;
+}
+
+.form-group.full {
+  grid-column: 1 / -1;
+}
+
+.form-group label {
+  color: #344054;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select,
+.score-row input,
+.score-row select,
+.skill-row input {
+  width: 100%;
+  box-sizing: border-box;
+
+  border: 1px solid #d0d5dd;
+  border-radius: 9px;
+
+  background: white;
+  color: #172033;
+
+  padding: 11px 12px;
+
+  font-family: inherit;
+  font-size: 14px;
+
+  outline: none;
+
+  transition: 0.2s;
+}
+
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus,
+.score-row input:focus,
+.score-row select:focus,
+.skill-row input:focus {
+  border-color: #7c3aed;
+  box-shadow: 0 0 0 3px rgba(124, 58, 237, 0.1);
+}
+
+.form-group textarea {
+  resize: vertical;
+  line-height: 1.6;
+}
+
+/* =========================
+   FONT CONTROLS
+========================= */
+
+.font-controls {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+
+  margin-top: 18px;
+  padding: 11px 13px;
+
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+
+  flex-wrap: wrap;
+}
+
+.font-controls strong {
+  font-size: 13px;
+  margin-right: 4px;
+}
+
+.font-controls select {
+  border: 1px solid #d0d5dd;
+  border-radius: 7px;
+
+  padding: 7px 9px;
+
+  background: white;
+  font-size: 13px;
+}
+
+/* =========================
+   REPEATED CARDS
+========================= */
+
+.repeat-card {
+  background: #f8fafc;
+
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+
+  padding: 16px;
+  margin-bottom: 14px;
+}
+
+.repeat-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-bottom: 15px;
+}
+
+.repeat-header strong {
+  font-size: 14px;
+}
+
+.remove-btn {
+  width: 32px;
+  height: 32px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid #fecdd3;
+  border-radius: 7px;
+
+  background: #fff1f2;
+  color: #be123c;
+
+  cursor: pointer;
+}
+
+.remove-btn:hover {
+  background: #ffe4e6;
+}
+
+/* =========================
+   SCORE
+========================= */
+
+.score-row {
+  display: grid;
+  grid-template-columns: 110px 1fr;
+  gap: 8px;
+}
+
+/* =========================
+   SKILLS
+========================= */
+
+.skill-row {
+  display: grid;
+  grid-template-columns: 32px 1fr 34px;
+  align-items: center;
+  gap: 9px;
+
+  margin-bottom: 10px;
+}
+
+.skill-row > span {
+  width: 30px;
+  height: 30px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: #ede9fe;
+  color: #6d28d9;
+
+  font-size: 12px;
+  font-weight: 700;
+}
+
+/* =========================
+   EMPTY
+========================= */
+
+.empty-box {
+  padding: 25px;
+
+  text-align: center;
+
+  background: #f8fafc;
+  border: 1px dashed #cbd5e1;
+  border-radius: 10px;
+
+  color: #667085;
+  font-size: 14px;
+
+  margin-bottom: 12px;
+}
+
+/* =========================
+   QUICK TOOLS
+========================= */
+
+.quick-tools {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+
+  margin-top: 16px;
+}
+
+.quick-tools button {
+  min-height: 48px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+
+  border: 1px solid #d9dfe9;
+  border-radius: 10px;
+
+  background: white;
+  color: #344054;
+
+  font-size: 13px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: 0.2s;
+}
+
+.quick-tools button:hover {
+  border-color: #8b5cf6;
+  color: #6d28d9;
+  background: #faf7ff;
+}
+
+/* =========================
+   PREVIEW AREA
+========================= */
+
+.builder-preview-area {
+  min-width: 0;
+
+  position: sticky;
+  top: 100px;
+
+  max-height: calc(100vh - 120px);
+  overflow-y: auto;
+
+  padding-right: 5px;
+}
+
+.preview-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-bottom: 15px;
+}
+
+.preview-header h2 {
+  margin: 0 0 5px;
+  font-size: 22px;
+}
+
+.preview-header p {
+  margin: 0;
+
+  color: #667085;
+  font-size: 13px;
+}
+
+.preview-buttons {
+  display: flex;
+  gap: 7px;
+}
+
+.preview-buttons button {
+  width: 38px;
+  height: 38px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid #d7ddea;
+  border-radius: 8px;
+
+  background: white;
+  color: #344054;
+
+  cursor: pointer;
+}
+
+.preview-buttons button:hover {
+  background: #f5f7fb;
+}
+
+/* =========================
+   RESUME PAPER
+========================= */
+
+.resume-paper {
+  width: 210mm;
+  min-height: 297mm;
+
+  box-sizing: border-box;
+
+  margin: 0 auto;
+  padding: 18mm 17mm;
+
+  background: white;
+
+  border: 1px solid #dfe3ea;
+
+  box-shadow:
+    0 10px 30px rgba(16, 24, 40, 0.12);
+
+  color: #111827;
+}
+
+/* =========================
+   RESUME HEADER
+========================= */
+
+.resume-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+
+  padding-bottom: 17px;
+  margin-bottom: 17px;
+
+  border-bottom: 2px solid #111827;
+}
+
+.resume-photo {
+  width: 90px;
+  height: 90px;
+
+  object-fit: cover;
+
+  border-radius: 8px;
+  border: 1px solid #d1d5db;
+
+  flex-shrink: 0;
+}
+
+.resume-heading {
+  flex: 1;
+}
+
+.resume-heading h1 {
+  margin: 0 0 5px;
+
+  font-size: 30px;
+  line-height: 1.15;
+}
+
+.resume-heading h2 {
+  margin: 0 0 10px;
+
+  font-size: 17px;
+  font-weight: 500;
+
+  color: #4b5563;
+}
+
+.contact-line {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px 16px;
+
+  color: #4b5563;
+
+  font-size: 11px;
+}
+
+.contact-line span {
+  word-break: break-word;
+}
+
+/* =========================
+   RESUME SECTIONS
+========================= */
+
+.resume-section {
+  margin-bottom: 17px;
+}
+
+.resume-section h3 {
+  margin: 0 0 9px;
+
+  padding-bottom: 5px;
+
+  border-bottom: 1px solid #9ca3af;
+
+  color: #111827;
+
+  font-size: 13px;
+  letter-spacing: 0.7px;
+}
+
+.resume-section p {
+  margin: 4px 0;
+
+  line-height: 1.55;
+}
+
+.resume-item {
+  margin-bottom: 11px;
+
+  line-height: 1.5;
+}
+
+.resume-item-top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+
+  gap: 15px;
+}
+
+.resume-item-top strong {
+  font-size: 13px;
+}
+
+.resume-item-top span {
+  white-space: nowrap;
+
+  color: #4b5563;
+}
+
+.resume-item > div {
+  color: #4b5563;
+}
+
+.resume-text p {
+  margin: 2px 0;
+}
+
+/* =========================
+   SKILL TAGS
+========================= */
+
+.skills-preview {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+}
+
+.skill-tag {
+  display: inline-block;
+
+  padding: 5px 9px;
+
+  border: 1px solid #d1d5db;
+  border-radius: 5px;
+
+  background: #f9fafb;
+
+  font-size: 11px;
+}
+
+/* =========================
+   SCROLLBAR
+========================= */
+
+.builder-preview-area::-webkit-scrollbar {
+  width: 7px;
+}
+
+.builder-preview-area::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.builder-preview-area::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 10px;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 1200px) {
+  .builder-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .builder-preview-area {
+    position: static;
+
+    max-height: none;
+    overflow: visible;
+  }
+
+  .resume-paper {
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 760px) {
+  .builder-topbar {
+    position: static;
+
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .builder-brand {
+    justify-content: flex-start;
+  }
+
+  .builder-actions {
+    justify-content: flex-start;
+  }
+
+  .builder-layout {
+    padding: 14px;
+  }
+
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .form-group.full {
+    grid-column: auto;
+  }
+
+  .quick-tools {
+    grid-template-columns: 1fr;
+  }
+
+  .resume-paper {
+    width: 100%;
+    min-height: auto;
+
+    padding: 25px;
+  }
+
+  .resume-header {
+    flex-direction: column;
+  }
+
+  .resume-photo {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+/* =========================
+   PRINT
+========================= */
+
+@media print {
+  body {
+    background: white;
+  }
+
+  .builder-page {
+    background: white;
+  }
+
+  .builder-topbar,
+  .builder-editor,
+  .preview-header {
+    display: none !important;
+  }
+
+  .builder-layout {
+    display: block;
+    padding: 0;
+    margin: 0;
+  }
+
+  .builder-preview-area {
+    display: block;
+    position: static;
+    max-height: none;
+    overflow: visible;
+  }
+
+  .resume-paper {
+    width: 210mm;
+    min-height: 297mm;
+
+    margin: 0;
+    padding: 18mm 17mm;
+
+    border: none;
+    box-shadow: none;
+  }
+
+  @page {
+    size: A4;
+    margin: 0;
+  }
+}
+/* Change Template button */
+.change-template-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 8px 12px;
+  border: 1px solid #d7dbe5;
+  border-radius: 8px;
+  background: #ffffff;
+  color: #202938;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.change-template-btn:hover {
+  border-color: #6d28d9;
+  color: #6d28d9;
+  background: #faf7ff;
+}
+/* =========================================================
+   RESUME TEMPLATE STYLES
+   ========================================================= */
+
+/* Common */
+.resume-paper.template-modern,
+.resume-paper.template-professional,
+.resume-paper.template-minimal,
+.resume-paper.template-ats-pro,
+.resume-paper.template-student,
+.resume-paper.template-creative,
+.resume-paper.template-academic,
+.resume-paper.template-executive {
+  transition: all 0.2s ease;
+}
+
+
+/* =========================================================
+   1. MODERN
+   ========================================================= */
+
+.resume-paper.template-modern .resume-header {
+  border-bottom: 2px solid #6d28d9;
+}
+
+.resume-paper.template-modern .resume-name {
+  color: #6d28d9;
+}
+
+.resume-paper.template-modern .resume-section-title {
+  color: #6d28d9;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+
+/* =========================================================
+   2. PROFESSIONAL
+   ========================================================= */
+
+.resume-paper.template-professional .resume-header {
+  background: #f3f4f6;
+  padding: 20px;
+  border-left: 5px solid #1f2937;
+}
+
+.resume-paper.template-professional .resume-name {
+  color: #111827;
+}
+
+.resume-paper.template-professional .resume-section-title {
+  color: #111827;
+  border-bottom: 2px solid #111827;
+}
+
+
+/* =========================================================
+   3. MINIMAL
+   ========================================================= */
+
+.resume-paper.template-minimal .resume-header {
+  border-bottom: 1px solid #d1d5db;
+}
+
+.resume-paper.template-minimal .resume-name {
+  color: #111827;
+  font-weight: 500;
+}
+
+.resume-paper.template-minimal .resume-section-title {
+  color: #374151;
+  border-bottom: none;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+
+/* =========================================================
+   4. ATS PRO
+   ========================================================= */
+
+.resume-paper.template-ats-pro {
+  box-shadow: none;
+}
+
+.resume-paper.template-ats-pro .resume-header {
+  border-bottom: 2px solid #111827;
+}
+
+.resume-paper.template-ats-pro .resume-name {
+  color: #111827;
+}
+
+.resume-paper.template-ats-pro .resume-section-title {
+  color: #111827;
+  border-bottom: 1px solid #111827;
+}
+
+
+/* =========================================================
+   5. STUDENT
+   ========================================================= */
+
+.resume-paper.template-student .resume-header {
+  background: #faf5ff;
+  border-bottom: 3px solid #7c3aed;
+  padding: 18px;
+}
+
+.resume-paper.template-student .resume-name {
+  color: #7c3aed;
+}
+
+.resume-paper.template-student .resume-section-title {
+  color: #7c3aed;
+  border-bottom: 1px solid #ddd6fe;
+}
+
+
+/* =========================================================
+   6. CREATIVE
+   ========================================================= */
+
+.resume-paper.template-creative .resume-header {
+  background: #312e81;
+  color: white;
+  padding: 22px;
+  border-radius: 0;
+}
+
+.resume-paper.template-creative .resume-name,
+.resume-paper.template-creative .resume-role,
+.resume-paper.template-creative .resume-contact {
+  color: white;
+}
+
+.resume-paper.template-creative .resume-section-title {
+  color: #4338ca;
+  border-bottom: 2px solid #c7d2fe;
+}
+
+
+/* =========================================================
+   7. ACADEMIC
+   ========================================================= */
+
+.resume-paper.template-academic .resume-header {
+  border-bottom: 3px double #374151;
+}
+
+.resume-paper.template-academic .resume-name {
+  color: #1f2937;
+  font-family: Georgia, "Times New Roman", serif;
+}
+
+.resume-paper.template-academic .resume-section-title {
+  color: #1f2937;
+  font-family: Georgia, "Times New Roman", serif;
+  border-bottom: 1px solid #9ca3af;
+}
+
+
+/* =========================================================
+   8. EXECUTIVE
+   ========================================================= */
+
+.resume-paper.template-executive .resume-header {
+  background: #111827;
+  color: white;
+  padding: 24px;
+}
+
+.resume-paper.template-executive .resume-name {
+  color: white;
+  font-weight: 700;
+}
+
+.resume-paper.template-executive .resume-role,
+.resume-paper.template-executive .resume-contact {
+  color: #e5e7eb;
+}
+
+.resume-paper.template-executive .resume-section-title {
+  color: #111827;
+  border-bottom: 2px solid #111827;
+  font-weight: 700;
+}

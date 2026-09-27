@@ -1,0 +1,763 @@
+
+/* =========================================
+   ATS CHECKER PAGE
+========================================= */
+
+.ats-page {
+  min-height: 100vh;
+  background: #f7f8fc;
+  color: #17172b;
+}
+
+
+/* =========================================
+   NAVBAR
+========================================= */
+
+.ats-navbar {
+  height: 72px;
+  background: white;
+  border-bottom: 1px solid #e8e8ef;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 0 7%;
+
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+
+.ats-logo {
+  font-size: 25px;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+
+.ats-logo span {
+  color: #6c3df5;
+}
+
+
+.ats-navbar nav {
+  display: flex;
+  gap: 25px;
+}
+
+
+.ats-navbar nav a {
+  text-decoration: none;
+  color: #666675;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+
+.ats-navbar nav a:hover {
+  color: #6c3df5;
+}
+
+
+.ats-create-btn {
+  border: none;
+
+  background: #6c3df5;
+
+  color: white;
+
+  padding: 11px 20px;
+
+  border-radius: 9px;
+
+  font-weight: 700;
+
+  cursor: pointer;
+}
+
+
+/* =========================================
+   HERO
+========================================= */
+
+.ats-hero {
+  text-align: center;
+
+  background: white;
+
+  padding: 65px 20px 50px;
+}
+
+
+.ats-badge {
+  display: inline-block;
+
+  background: #f0ebff;
+
+  color: #6c3df5;
+
+  padding: 8px 15px;
+
+  border-radius: 30px;
+
+  font-size: 11px;
+
+  font-weight: 800;
+
+  margin-bottom: 18px;
+}
+
+
+.ats-hero h1 {
+  font-size: 46px;
+
+  margin: 0;
+
+  line-height: 1.2;
+}
+
+
+.ats-hero h1 span {
+  color: #6c3df5;
+
+  margin-left: 10px;
+}
+
+
+.ats-hero p {
+  max-width: 650px;
+
+  margin: 18px auto 0;
+
+  color: #707080;
+
+  font-size: 16px;
+
+  line-height: 1.7;
+}
+
+
+/* =========================================
+   INPUT
+========================================= */
+
+.ats-input-section {
+  width: 86%;
+
+  max-width: 1100px;
+
+  margin: 45px auto;
+}
+
+
+.ats-input-card {
+  background: white;
+
+  border: 1px solid #e5e5ec;
+
+  border-radius: 18px;
+
+  padding: 28px;
+
+  box-shadow: 0 8px 25px rgba(30, 20, 80, 0.05);
+}
+
+
+.ats-input-header {
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  margin-bottom: 20px;
+}
+
+
+.ats-input-header h2 {
+  margin: 0 0 5px;
+
+  font-size: 20px;
+}
+
+
+.ats-input-header p {
+  margin: 0;
+
+  color: #888;
+
+  font-size: 13px;
+}
+
+
+.ats-input-icon {
+  width: 48px;
+
+  height: 48px;
+
+  background: #eee9ff;
+
+  border-radius: 12px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  font-size: 22px;
+}
+
+
+.ats-input-card textarea {
+  width: 100%;
+
+  min-height: 320px;
+
+  resize: vertical;
+
+  box-sizing: border-box;
+
+  border: 1px solid #dedee8;
+
+  border-radius: 12px;
+
+  padding: 18px;
+
+  font-family: inherit;
+
+  font-size: 14px;
+
+  line-height: 1.7;
+
+  outline: none;
+}
+
+
+.ats-input-card textarea:focus {
+  border-color: #6c3df5;
+
+  box-shadow: 0 0 0 3px #eee9ff;
+}
+
+
+.ats-input-footer {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  margin-top: 12px;
+}
+
+
+.ats-input-footer span {
+  color: #999;
+
+  font-size: 12px;
+}
+
+
+.check-btn {
+  border: none;
+
+  background: #6c3df5;
+
+  color: white;
+
+  padding: 13px 22px;
+
+  border-radius: 9px;
+
+  font-weight: 800;
+
+  cursor: pointer;
+}
+
+
+.check-btn:hover {
+  opacity: 0.9;
+}
+
+
+/* =========================================
+   RESULTS
+========================================= */
+
+.ats-results {
+  width: 86%;
+
+  max-width: 1100px;
+
+  margin: 0 auto 70px;
+}
+
+
+.ats-results-heading {
+  margin-bottom: 22px;
+}
+
+
+.ats-results-heading p {
+  color: #6c3df5;
+
+  font-size: 11px;
+
+  font-weight: 800;
+
+  letter-spacing: 1px;
+
+  margin: 0 0 5px;
+}
+
+
+.ats-results-heading h2 {
+  margin: 0;
+
+  font-size: 28px;
+}
+
+
+/* =========================================
+   SCORE CARD
+========================================= */
+
+.ats-score-card {
+  background: white;
+
+  border: 1px solid #e5e5ec;
+
+  border-radius: 17px;
+
+  padding: 28px;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 30px;
+
+  margin-bottom: 22px;
+}
+
+
+.ats-score-circle {
+  width: 125px;
+
+  height: 125px;
+
+  flex-shrink: 0;
+
+  border-radius: 50%;
+
+  background: #f0ebff;
+
+  border: 8px solid #6c3df5;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  justify-content: center;
+}
+
+
+.ats-score-circle strong {
+  color: #6c3df5;
+
+  font-size: 29px;
+}
+
+
+.ats-score-circle span {
+  color: #777;
+
+  font-size: 11px;
+}
+
+
+.ats-score-content {
+  flex: 1;
+}
+
+
+.ats-score-content h3 {
+  margin: 0 0 8px;
+
+  font-size: 18px;
+}
+
+
+.ats-score-content p {
+  color: #777;
+
+  font-size: 13px;
+
+  line-height: 1.6;
+
+  margin: 0 0 17px;
+}
+
+
+.ats-progress {
+  height: 9px;
+
+  background: #eeeeF4;
+
+  border-radius: 10px;
+
+  overflow: hidden;
+}
+
+
+.ats-progress div {
+  height: 100%;
+
+  background: #6c3df5;
+
+  border-radius: 10px;
+
+  transition: width 0.5s;
+}
+
+
+/* =========================================
+   CHECK GRID
+========================================= */
+
+.ats-check-grid {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 15px;
+
+  margin-bottom: 22px;
+}
+
+
+.ats-check-card {
+  background: white;
+
+  border: 1px solid #e5e5ec;
+
+  border-radius: 14px;
+
+  padding: 18px;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 13px;
+}
+
+
+.ats-check-icon {
+  width: 38px;
+
+  height: 38px;
+
+  border-radius: 50%;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  font-weight: 800;
+
+  flex-shrink: 0;
+}
+
+
+.ats-check-icon.pass {
+  background: #eaf9ef;
+
+  color: #2a9b50;
+}
+
+
+.ats-check-icon.fail {
+  background: #fff1f0;
+
+  color: #d14b43;
+}
+
+
+.ats-check-card h3 {
+  margin: 0 0 4px;
+
+  font-size: 14px;
+}
+
+
+.ats-check-card p {
+  margin: 0;
+
+  color: #888;
+
+  font-size: 11px;
+}
+
+
+/* =========================================
+   SUGGESTIONS
+========================================= */
+
+.ats-suggestion-card {
+  background: #f0ebff;
+
+  border: 1px solid #ddd2ff;
+
+  border-radius: 17px;
+
+  padding: 25px;
+}
+
+
+.ats-suggestion-top {
+  display: flex;
+
+  align-items: center;
+
+  gap: 14px;
+}
+
+
+.suggestion-symbol {
+  width: 48px;
+
+  height: 48px;
+
+  border-radius: 12px;
+
+  background: white;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  font-size: 22px;
+}
+
+
+.ats-suggestion-top h2 {
+  margin: 0 0 4px;
+
+  font-size: 18px;
+}
+
+
+.ats-suggestion-top p {
+  margin: 0;
+
+  color: #777;
+
+  font-size: 12px;
+}
+
+
+.suggestion-list {
+  margin-top: 20px;
+}
+
+
+.suggestion-item {
+  display: flex;
+
+  align-items: flex-start;
+
+  gap: 10px;
+
+  background: white;
+
+  border-radius: 9px;
+
+  padding: 11px 13px;
+
+  margin-bottom: 8px;
+}
+
+
+.suggestion-item span {
+  color: #6c3df5;
+
+  font-weight: 800;
+}
+
+
+.suggestion-item p {
+  margin: 0;
+
+  color: #555;
+
+  font-size: 12px;
+
+  line-height: 1.5;
+}
+
+
+.suggestion-actions {
+  display: flex;
+
+  gap: 10px;
+
+  margin-top: 20px;
+}
+
+
+.suggestion-actions button {
+  border: none;
+
+  background: #6c3df5;
+
+  color: white;
+
+  padding: 11px 16px;
+
+  border-radius: 8px;
+
+  cursor: pointer;
+
+  font-weight: 700;
+
+  font-size: 12px;
+}
+
+
+.suggestion-actions .secondary-action {
+  background: white;
+
+  color: #6c3df5;
+
+  border: 1px solid #d5c9ff;
+}
+
+
+/* =========================================
+   FOOTER
+========================================= */
+
+.ats-footer {
+  background: #151522;
+
+  color: white;
+
+  padding: 35px 7%;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+}
+
+
+.ats-footer div {
+  font-size: 20px;
+
+  font-weight: 800;
+}
+
+
+.ats-footer div span {
+  color: #8d6cff;
+}
+
+
+.ats-footer p {
+  color: #aaa;
+
+  font-size: 12px;
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 950px) {
+
+  .ats-navbar nav {
+    display: none;
+  }
+
+  .ats-check-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+}
+
+
+@media (max-width: 650px) {
+
+  .ats-navbar {
+    padding: 0 20px;
+  }
+
+  .ats-create-btn {
+    padding: 9px 12px;
+
+    font-size: 11px;
+  }
+
+  .ats-input-section,
+  .ats-results {
+    width: 92%;
+  }
+
+  .ats-hero h1 {
+    font-size: 36px;
+  }
+
+  .ats-hero h1 span {
+    display: block;
+
+    margin-left: 0;
+  }
+
+  .ats-score-card {
+    flex-direction: column;
+
+    text-align: center;
+  }
+
+  .ats-check-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .ats-input-footer {
+    flex-direction: column;
+
+    align-items: stretch;
+
+    gap: 12px;
+  }
+
+  .check-btn {
+    width: 100%;
+  }
+
+  .suggestion-actions {
+    flex-direction: column;
+  }
+
+  .ats-footer {
+    flex-direction: column;
+
+    gap: 12px;
+
+    text-align: center;
+  }
+
+}

@@ -1,0 +1,163 @@
+
+.my-resumes-page {
+  min-height: 100vh;
+  background: #f6f8fc;
+  padding: 30px;
+}
+
+.my-resumes-header {
+  max-width: 1200px;
+  margin: 0 auto 35px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.my-resumes-header h1 {
+  margin: 0;
+  font-size: 32px;
+}
+
+.my-resumes-header p {
+  margin: 6px 0 0;
+  color: #667085;
+}
+
+.back-btn,
+.create-resume-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  border: none;
+  border-radius: 8px;
+  padding: 11px 16px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.back-btn {
+  background: white;
+  color: #344054;
+}
+
+.create-resume-btn {
+  background: #2563eb;
+  color: white;
+}
+
+.create-resume-btn:hover {
+  background: #1d4ed8;
+}
+
+.my-resumes-content {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.resume-grid {
+  display: grid;
+  grid-template-columns:
+    repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.resume-card {
+  background: white;
+  border: 1px solid #e4e7ec;
+  border-radius: 14px;
+  padding: 22px;
+  box-shadow: 0 4px 15px rgba(16, 24, 40, 0.05);
+}
+
+.resume-card-icon {
+  width: 55px;
+  height: 55px;
+  border-radius: 12px;
+  background: #eef4ff;
+  color: #2563eb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 18px;
+}
+
+.resume-card-info h2 {
+  margin: 0 0 8px;
+  font-size: 19px;
+}
+
+.resume-card-info p {
+  margin: 0 0 6px;
+  color: #475467;
+}
+
+.resume-card-info span {
+  font-size: 13px;
+  color: #98a2b3;
+}
+
+.resume-card-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.resume-card-actions button {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 9px;
+  border: 1px solid #d0d5dd;
+  border-radius: 7px;
+  background: white;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.resume-card-actions button:hover {
+  background: #f9fafb;
+}
+
+.resume-card-actions .delete-resume-btn {
+  color: #d92d20;
+}
+
+.empty-resumes {
+  min-height: 400px;
+  background: white;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 40px;
+  color: #667085;
+}
+
+.empty-resumes h2 {
+  color: #101828;
+  margin: 15px 0 8px;
+}
+
+.empty-resumes p {
+  margin-bottom: 22px;
+}
+
+@media (max-width: 700px) {
+  .my-resumes-page {
+    padding: 18px;
+  }
+
+  .my-resumes-header {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .my-resumes-header h1 {
+    font-size: 26px;
+  }
+}
